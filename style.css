@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.formcontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.formcontainer h1 {
+    margin-bottom: 30px;
+    color: #BF5E5B;
+}
+
+
+.flexleft {
+    display: flex;
+    flex: 1;
+    background-color: #BF5E5B;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flexleft img {
+    width: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+
+}
+
+.flexright {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: url('./assets/back-churras.jpg');
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 1px solid #e2e2e2;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #BF5E5B;
+    font-weight: bold;
+}
+
+#resultado {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#resultado p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultado p img {
+    height: 70px;
+    max-height: 70px;
+    width: 70px;
+}
+
+@media (max-width: 330px) {
+    
+    .flexleft {
+        display: none;
+    }
+    
+}
