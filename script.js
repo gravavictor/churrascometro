@@ -21,9 +21,15 @@ function calcular () {
     let bebidaTotal = bebidaPP(duracao) * adultos + (bebidaPP(duracao) / 2) * criancas;
     
     
-    resultado.innerHTML = `<p> <img src="./assets/meat.png">${carneTotal}g de Carne`;
-    resultado.innerHTML += `<p> <img src="./assets/cerveja.png">${cervejaTotal}ml de Cerveja`;
-    resultado.innerHTML += `<p> <img src="./assets/refri.png">${bebidaTotal}ml de Refri/Agua`;
+        const carneRet = (carneTotal / 1000 >=1) ? 
+        `<p> <img src="./assets/carne.png">${carneTotal / 1000} kg de Carne`
+        : `<p> <img src="./assets/carne.png">${carneTotal} g de Carne`
+        
+    
+
+    resultado.innerHTML = carneRet;
+    resultado.innerHTML += `<p> <img src="./assets/cerveja.png">${Math.ceil(cervejaTotal / 350)} latas de Cerveja`;
+    resultado.innerHTML += `<p> <img src="./assets/coke.png">${Math.ceil(bebidaTotal / 2000)} garrafas de Refri`;
 }
 
 function carnePP (duracao){
