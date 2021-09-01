@@ -109,7 +109,7 @@ footer {
     color: #BF5E5B;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
     
     .flexleft {
         display: none;
